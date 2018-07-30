@@ -5,7 +5,7 @@ metadata:
 spec:
   ports:
   - name: http
-    port: 80
+    port: 8052
     targetPort: 8052
   selector:
     app: awx
