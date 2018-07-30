@@ -33,5 +33,3 @@ spec:
           name: data-volume
       volumes:
       - name: data-volume
-        persistentVolumeClaim: 
-          claimName: awx-db
