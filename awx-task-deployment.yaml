@@ -13,6 +13,7 @@ spec:
         app: awx
         role: task
     spec:
+      hostname: awx
       containers:
       - name: awx-task
         image: geerlingguy/awx_task:latest
