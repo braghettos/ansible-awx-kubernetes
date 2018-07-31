@@ -2,7 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: awx-db
-  namespace: ansible-awx
   labels:
     app: awx
     role: database
