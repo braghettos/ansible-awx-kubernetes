@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: awx-db
+  namespace: ansible-awx
   labels:
     app: awx
     role: database
@@ -28,8 +29,8 @@ spec:
           value: awx
         - name: PGDATA
           value: "/var/lib/postgresql/data/pgdata"
-        volumeMounts:
-        - mountPath: /var/lib/postgresql/data
-          name: data-volume
-      volumes:
-      - name: data-volume
+ #       volumeMounts:
+ #       - mountPath: /var/lib/postgresql/data
+ #         name: data-volume
+ #     volumes:
+ #     - name: data-volume
